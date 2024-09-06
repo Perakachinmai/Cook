@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0e68c; /* Light yellow background */
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #8b4513; /* Brown title color */
+    margin-bottom: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    text-align: left;
+    color: #8b4513; /* Brown for labels */
+}
+
+input, select, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #d2691e; /* Dark orange button */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #a0522d; /* Dark brown on hover */
+}
+
+.details {
+    margin-top: 20px;
+}
+
+.result {
+    margin-top: 10px;
+}
+
+p#total {
+    font-size: 18px;
+    font-weight: bold;
+    color: #b22222; /* Red for total cost */
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Site</title>
+    <link rel="stylesheet" href="cook.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to the Cooking Site</h1>
+        
+        <div class="form-container">
+            <label for="recipe">Select Recipe:</label>
+            <select id="recipe" onchange="showRecipeDetails()">
+                <option value="none" selected disabled>Select a recipe</option>
+                <option value="spaghetti">Spaghetti Bolognese</option>
+                <option value="curry">Chicken Curry</option>
+                <option value="stirfry">Vegetable Stir-fry</option>
+            </select>
+            
+            <div class="details" id="recipeDetails">
+                <h2>Recipe Details</h2>
+                <p id="ingredients">Ingredients: N/A</p>
+                <p id="steps">Steps: N/A</p>
+                <label for="servings">Number of Servings:</label>
+                <input type="number" id="servings" value="1" min="1" max="10">
+
+                <button id="calculate" onclick="calculateCost()">Calculate Cost</button>
+
+                <div class="result">
+                    <p id="total">Total: $0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="cook.js"></script>
+</body>
+</html>
